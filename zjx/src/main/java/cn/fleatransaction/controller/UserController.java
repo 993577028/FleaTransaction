@@ -51,7 +51,6 @@ public class UserController {
     @ApiOperation(value = "获取用户数量")
     @GetMapping("/count")
     public Integer count(){
-        System.out.println(userService.count());
         return userService.count();
     }
 
